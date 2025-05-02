@@ -1,10 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>আমার সিভি</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ecf0f1;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+    .contact {
+      font-size: 14px;
+      color: #555;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .section h2 {
+      border-left: 5px solid #3498db;
+      padding-left: 12px;
+      font-size: 1.4em;
+      margin-bottom: 15px;
+    }
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a.download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    a.download-btn:hover {
+      background-color: #2980b9;
+    }
+    @media (max-width: 768px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>স্বাগতম</h1>
-  <p><a href="cv.pdf" target="_blank">আমার সিভি ডাউনলোড করুন (PDF)</a></p>
+  <div class="container">
+    <header>
+      <!-- You can replace the src below with your own profile image -->
+      <img src="https://media.discordapp.net/attachments/823220386674114610/1367913987991408683/494815103_1233171485476926_7419159451328251618_n.jpg?ex=681650ad&is=6814ff2d&hm=089f336397351d7e11a2452cf43ef5284898629116ba65624643eb8c2af86de5&=&format=webp&width=626&height=940" alt="Profile" class="profile-img" />
+      <div>
+        <h1>Naawaz Sharif Antor</h1>
+        <p class="contact">Email: zznexusop@gmail.com | Phone: +8801XXXXXXXXX | Location: Dhaka, Bangladesh</p>
+      </div>
+    </header>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer/designer/student with a love for learning and solving problems using technology.</p>
+    </div>
+
+    <div class="section two-column">
+      <div>
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Node.js</li>
+          <li>Git, GitHub</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>BSc in Computer Science</strong><br />XYZ University (2020 - 2024)</li>
+          <li><strong>HSC</strong><br />ABC College (2018 - 2020)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Freelance Web Developer</strong> (2023 - Present)</li>
+        <li><strong>Intern at XYZ Software</strong> – June 2022 to August 2022</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Download CV</h2>
+      <a class="download-btn" href="cv.pdf" target="_blank">Download PDF CV</a>
+    </div>
+  </div>
 </body>
 </html>
